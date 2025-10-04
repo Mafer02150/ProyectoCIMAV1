@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  {% block extra_css %} {% endblock %}
+</head>
+
+<body>
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">
+            <img src="{% static 'images/logo.jpg' %}">
+        </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fundacion CIMA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="#">¿Quienes Somos?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Noticias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Inscripciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Contacto</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+        <div class="text-center">
+            <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/profile.php?id=61573420596326" class="text-dark"> <i class="fab fa-whatsapp"></i> </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/profile.php?id=61573420596326" class="text-dark"> <i class="fab fa-facebook"></i> </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/cima_salta/" class="text-dark"> <i class="fab fa-instagram"></i> </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/profile.php?id=61573420596326" class="text-dark"> <i class="fab fa-tiktok"></i> </a>
+                </li>
+            </ul>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    </nav>
+  <!-- Cierre de Navbar -->
+  <!-- Contenido principal -->
+  <div class="container mt-4">
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Scripts -->
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  {% block extra_js %}{% endblock %}
+</body>
+</html>
