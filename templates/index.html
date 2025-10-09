@@ -26,38 +26,38 @@
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fundacion CIMA</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        <!-- Opciones de Navegacion -->
-        <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <li class="nav-item">
-                    <a class="nav-link mx-lg-2 active" aria-current="page" href="#">¿Quienes Somos?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="#">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="#">Inscripciones</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="#">Contacto</a>
-                </li>
-            </ul>
-        </div>
-        </div>
+            <!-- Opciones de Navegacion -->
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">¿Quienes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Inscripciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>       
         <!-- Iconos de Redes sociales -->
         <div class="text-center">
             <ul class="navbar-nav flex-row justify-content-center">
                 <li class="nav-item mx-2">
-                    <a class="text-dark nav-link" href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a class="text-dark nav-link" href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="text-dark nav-link" href="#"><i class="fab fa-facebook"></i></a>
+                    <a class="text-dark nav-link" href="https://www.facebook.com/profile.php?id=61573420596326" target="_blank"><i class="fab fa-facebook"></i></a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="text-dark nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="text-dark nav-link" href="https://www.instagram.com/cima_salta/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="text-dark nav-link" href="#"><i class="fab fa-tiktok"></i></a>
+                    <a class="text-dark nav-link" href="https://www.tiktok.com/@cima_salta" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </li>
             </ul>
         </div>
@@ -72,6 +72,56 @@
   <div class="container mt-4">
     {% block content %}{% endblock %}
   </div>
+  <!-- Inicio de footer -->
+   <footer class="text-dark pt-5 pb-4">
+    <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start"> 
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Ubicaciones</h5>
+                <hr class="mb-4">
+                <p>
+                    <i class="fa-solid fa-location-dot me-3"></i><a href="https://maps.app.goo.gl/JuiXKAmiximmghmS6" class="text-dark" target="_blank">Sede Central: Urquiza 459</a>
+                </p>
+                <p>
+                    <i class="fa-solid fa-location-dot me-3"></i><a href="https://maps.app.goo.gl/4Tff9Y82hy3vmdFj7" class="text-dark" target="_blank">2da Sede: Pasaje Chicoana 1053</a>
+                </p>
+                <p>
+                    <i class="fa-solid fa-globe me-2"></i> Ciudad de Salta Argentina
+                </p>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 text-center">
+                <img src="{% static 'images/LogoCima.png' %}" alt="Fundacion Cima" style="height: 80px; width: auto;">
+                <br><br>
+                <p> Centro de Instruccion y Mejora Academica</p>
+                <p>“Impulsando el potencial de cada estudiante”</p>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contacto</h5>
+                <hr class="mb-4">
+                <p>
+                    <i class="fas fa-envelope me-3"></i> test@gmail.com
+                </p>
+                <p>
+                    <i class="fas fa-phone me-3"></i> +387xxxxxx
+                </p>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-dark"><i class="fab fa-whatsapp"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-dark nav-link" href="https://www.facebook.com/profile.php?id=61573420596326" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-dark nav-link" href="https://www.instagram.com/cima_salta/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-dark nav-link" href="https://www.tiktok.com/@cima_salta" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+   </footer>
 
   <!-- Scripts -->
   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
