@@ -1,6 +1,18 @@
-footer {
-    background-color: #e1e3ee;
+/* Hace que el footer quede pegado al final de la página */
+html, body {
+  height: 100%;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* El contenido principal ocupa todo el espacio disponible */
+main {
+  flex: 1;
+}
+
 .navbar {
     background-color: #e1e3ee;
     min-height: 80px; /* Cambiar height fijo por min-height */
@@ -71,12 +83,21 @@ footer {
     }
 }
 
+footer {
+    background-color: #e1e3ee;
+}
+
 a:hover {
     color:#4747f5 !important;
 }
 
 i {
     font-size: 25px;
+}
+
+#LogoFooter {
+    height: 90px; 
+    width: auto;
 }
 
 a {
@@ -87,4 +108,6 @@ a {
 p {
     font-size: 17px;
 }
+
+
 
