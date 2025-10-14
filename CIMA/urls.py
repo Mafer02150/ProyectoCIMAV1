@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from HomeApp import views as home_views
+from InscripcionApp import views as inscripcion_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_views.home, name='inicio'),
+    path('inscripcion/', inscripcion_views.inscripcion , name='inscripciones'),
 ]
