@@ -7,30 +7,48 @@
 <!--Carga archivos CSS de la carpeta static-->
 {% load static %}
 
+<!--Carga de archivos CSS especificos-->
+{% block extra_css %} 
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+
 <!-- <body> -->
 {% block content %} 
-    
-    <img src="{% static 'images/work.png' %}" alt="Fundacion Cima" style="display: block ; margin: auto;width: 35%;"><br><br>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit praesent placerat fermentum consequat nisi accumsan, purus ultricies class sapien nascetur. Mi torquent venenatis facilisi 
-    molestie cubilia lacus, vehicula vulputate magnis sociis massa tristique, felis curae posuere porta justo. Rutrum habitant nostra platea magnis placerat nulla lobortis, sollicitudin 
-    morbi in at convallis eget phasellus eu, taciti leo neque etiam nisi cum.</p> <p>Habitasse consequat praesent fermentum feugiat porttitor libero justo, risus est mauris hac ultricies 
-    cum, suspendisse iaculis hendrerit nibh euismod pharetra. Auctor fames ultrices lectus erat porttitor enim pharetra cum tincidunt, praesent donec tellus lacus odio pellentesque 
-    quis. Ultricies tortor nostra leo tristique augue per ligula elementum dis varius volutpat, turpis gravida ut pellentesque dictum mi a torquent libero morbi.</p> 
-    <p>Vivamus habitant primis natoque lobortis at urna pellentesque, nam facilisi auctor lacinia enim non etiam, inceptos penatibus eget diam imperdiet cubilia, neque egestas nec 
-    vestibulum accumsan vel. Conubia torquent neque ultricies mus mattis pellentesque litora senectus sed, risus eu cursus euismod lobortis placerat sem ligula gravida, habitasse 
-    lacinia ante posuere mollis ut ullamcorper suscipit. Leo nec nisi tristique taciti malesuada at, magnis diam curabitur nam luctus purus, habitant blandit ornare praesent egestas.
-    Vulputate pretium leo eget porttitor fringilla class rutrum, duis habitasse tempus faucibus scelerisque suspendisse, magna proin urna ut tristique aliquet.</p> 
-    <p>Eros nulla taciti id quam senectus pulvinar tempor scelerisque ad augue enim luctus ridiculus ultricies est, himenaeos dictum risus vestibulum penatibus justo fermentum ac 
-    fusce facilisi venenatis urna tempus primis. Sollicitudin donec ligula aenean nunc egestas arcu nullam fermentum et elementum, vivamus luctus felis orci fringilla interdum 
-    justo penatibus lobortis, nec mauris tincidunt parturient cum diam nam hendrerit auctor. Inceptos ridiculus iaculis vitae congue mauris potenti curae, odio nisi convallis 
-    integer dictumst quisque aptent, a magna cum habitasse aliquam velit. Scelerisque mus fermentum interdum elementum risus lectus sollicitudin, vivamus parturient auctor 
-    lacinia nec sem.</p> 
-    <p>Quisque leo vestibulum volutpat mattis ligula phasellus sollicitudin nisl torquent penatibus, sociosqu commodo dis pellentesque mollis nostra viverra
-    eleifend auctor at lacinia, hac donec consequat rhoncus massa dictum ac pulvinar parturient. Blandit metus mollis natoque vestibulum rutrum nisi non vitae in, luctus 
-    eget quisque nullam suspendisse tempus eros. Bibendum magnis aliquam sollicitudin ultricies ornare urna nibh luctus per, convallis tincidunt dignissim ridiculus id 
-    litora blandit eleifend. Penatibus nunc habitasse velit eros orci dictumst rhoncus sociosqu ridiculus ac, elementum sodales volutpat congue dignissim tellus ligula 
-    class varius pellentesque, pretium venenatis cursus rutrum litora tincidunt interdum placerat inceptos.</p>
+    <section id="carrusel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-slide="carousel">
+            <div class="carousel-inner">
+                <div class="texto-fijo position-absolute translate-middle text-white text-center">
+                    <h2>Fundacion CIMA</h2>
+                </div>
+                <div class="carousel-item active">
+                    <img id="imgcarrusel" src="{% static 'images/Carrusel1.jpg' %}" class="d-block w-100" alt="Carrusel1">
+                </div>
+                <div class="carousel-item">
+                    <img id="imgcarrusel" src="{% static 'images/Carrusel2.jpg' %}" class="d-block w-100" alt="Carrusel2">
+                </div>
+                <div class="carousel-item">
+                    <img id="imgcarrusel" src="{% static 'images/Carrusel3.jpg' %}" class="d-block w-100" alt="Carrusel3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
+    <section>
+        <div id="SegmentoQuienes">
+            <h1>¿Quienes somos?</h1>
+        </div>
+        <p id="QuienesSomos">Lorem ipsum dolor sit amet consectetur adipiscing, elit praesent placerat fermentum consequat nisi accumsan, purus ultricies class sapien nascetur. Mi torquent venenatis facilisi 
+        molestie cubilia lacus, vehicula vulputate magnis sociis massa tristique, felis curae posuere porta justo. Rutrum habitant nostra platea magnis placerat nulla lobortis, sollicitudin 
+        morbi in at convallis eget phasellus eu, taciti leo neque etiam nisi cum.</p>
+    </section>
 {% endblock %}
 
 <!-- <script> -->

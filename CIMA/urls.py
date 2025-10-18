@@ -20,5 +20,5 @@ from HomeApp import views as home_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_views.home, name='inicio'),
+    path('', home_views.home, name='inicio'), 
 ]
