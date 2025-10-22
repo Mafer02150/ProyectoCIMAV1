@@ -17,7 +17,7 @@
     <section id="carrusel">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-slide="carousel">
             <div class="carousel-inner">
-                <div class="texto-fijo position-absolute translate-middle text-white text-center">
+                <div class="texto-fijo position-absolute translate-middle text-white">
                     <h2>Fundacion CIMA</h2>
                 </div>
                 <div class="carousel-item active">
@@ -31,24 +31,132 @@
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <i class="fa-solid fa-circle-arrow-left fa-2x"></i>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <i class="fa-solid fa-circle-arrow-right fa-2x"></i>
             </button>
         </div>
     </section>
 
     <section>
-        <div id="SegmentoQuienes">
+        <div id="SeparacionAzul">
             <h1>¿Quienes somos?</h1>
         </div>
         <p id="QuienesSomos">Lorem ipsum dolor sit amet consectetur adipiscing, elit praesent placerat fermentum consequat nisi accumsan, purus ultricies class sapien nascetur. Mi torquent venenatis facilisi 
-        molestie cubilia lacus, vehicula vulputate magnis sociis massa tristique, felis curae posuere porta justo. Rutrum habitant nostra platea magnis placerat nulla lobortis, sollicitudin 
-        morbi in at convallis eget phasellus eu, taciti leo neque etiam nisi cum.</p>
+        molestie cubilia lacus, vehicula vulputate magnis sociis massa tristique, felis curae posuere porta justo.</p>
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-4">
+                    <h4>Misión:</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nostra curabitur varius dis curae dignissim, urna malesuada facilisi vivamus sociis primis.</p>
+                    <h4>Objetivos:</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nostra curabitur varius dis curae dignissim, urna malesuada facilisi vivamus sociis primis.</p>
+                    <h4>Valores:</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nostra curabitur varius dis curae dignissim, urna malesuada facilisi vivamus sociis primis.</p>
+                </div>
+                <div class="col-6">
+                    <img id="imgmision" src="{% static 'images/Carrusel1.jpg' %}" class="d-block w-100" alt="Carrusel1">
+                </div>
+            </div>
+        </div>
     </section>
+    <section>
+        <div id="SeparacionAzul">
+            <h1>Nuestro Equipo</h1>
+        </div>
+        <h2 class="TextoSede">Sede Central</h2>
+        <div class="container">
+            <div class="row mb-4 justify-content-center">
+                <div class="col-6 col-md-6 col-lg-4" >
+                    <div class="card">
+                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
+                        <div class="card-body">
+                            <h5 class="card-title">Directora / Fundadora</h5>
+                            <p class="card-text">Nombre y Apellido</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
+                        <div class="card-body">
+                            <h5 class="card-title">Vicedirector</h5>
+                            <p class="card-text">Nombre y Apellido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3 justify-content-center">
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
+                        <div class="card-body">
+                            <h5 class="card-title">Secretario</h5>
+                            <p class="card-text">Nombre y Apellido</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
+                        <div class="card-body">
+                            <h5 class="card-title">Tesorero</h5>
+                            <p class="card-text">Nombre y Apellido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="TextoSede">Sede Centro Vecinal</h2>
+        <div class="container">
+            <div class="row mb-4 justify-content-center">
+                <div class="col-6 col-md-6 col-lg-4" >
+                    <div class="card">
+                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
+                        <div class="card-body">
+                            <h5 class="card-title">Directora / Fundadora</h5>
+                            <p class="card-text">Nombre y Apellido</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
+                        <div class="card-body">
+                            <h5 class="card-title">Vicedirector</h5>
+                            <p class="card-text">Nombre y Apellido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3 justify-content-center">
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
+                        <div class="card-body">
+                            <h5 class="card-title">Secretario</h5>
+                            <p class="card-text">Nombre y Apellido</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
+                        <div class="card-body">
+                            <h5 class="card-title">Tesorero</h5>
+                            <p class="card-text">Nombre y Apellido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 {% endblock %}
 
 <!-- <script> -->

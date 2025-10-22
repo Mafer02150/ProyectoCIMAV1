@@ -1,3 +1,4 @@
+/*Carrusel de inicio */
 .carousel{
     margin-top: 5%;
     margin-bottom: 3%;
@@ -20,14 +21,36 @@
     letter-spacing: 0.05em;
 }
 
+button i {
+    z-index: 10;
+    color: #447EF5;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.carousel-control-prev {
+  left: 10px;          /* más cerca del borde izquierdo */
+  top: 45%;            /* más arriba que el centro */
+  width: 50px;         /* opcional: ancho del botón */
+  height: 50px;        /* opcional: alto del botón */
+}
+
+.carousel-control-next {
+  right: 10px;         /* más cerca del borde derecho */
+  top: 45%;            /* más arriba que el centro */
+  width: 50px;
+  height: 50px;
+}
+
 #imgcarrusel{
     border-radius: 25px;
     object-fit: cover;
     width: auto;
-    height: 300px;
+    height: 400px;
+    opacity: 80%;
 }
 
-#SegmentoQuienes{
+/*Franja azul general*/
+#SeparacionAzul{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#fff;
@@ -37,12 +60,25 @@
     margin-bottom: 2%;
     
 }
+
+/*Seccion de Quienes Somos */
 #QuienesSomos{
     padding-left: 8%;
     padding-right: 8%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 div h1 {
     font-weight: bold;
     letter-spacing: 0.4em;
+}
+#imgmision{
+    border-radius: 24px;
+}
+
+/*Seccion de las Sedes*/
+.TextoSede {
+    padding-bottom: 2%;
+    font-size: 2.5em;
+    letter-spacing: 0.06em;
+    justify-self: center;
 }
