@@ -1,0 +1,137 @@
+/* estilos para el segmento de contactos */
+
+.contact-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-header {
+    background-color: #4a8df7;
+    color: white;
+    padding: 40px 0; 
+    font-size: 28px; 
+    font-weight: bold; 
+    letter-spacing: 20px;
+
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+
+}
+
+.contact-form-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-enviar {
+    background-color: #4a8df7;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-enviar:hover {
+    background-color: #3b79db;
+}
+
+/*  Ícono de WhatsApp y texto */
+.whatsapp-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.whatsapp-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.whatsapp-text {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+
+/* ---------------------------------------------------*/
+/*  Sección de Ubicaciones */
+
+.ubicaciones-header {
+  background-color: #4a8df7;
+  color: white;
+  padding: 40px 0;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  text-align: center;
+}
+
+.ubicaciones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.ubicacion {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.ubicacion h5 {
+  text-align: center;
+  margin-bottom: 10px;
+}
