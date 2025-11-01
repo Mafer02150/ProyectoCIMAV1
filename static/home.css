@@ -24,17 +24,25 @@
 }
 
 .texto-fijo {
-    z-index: 10;           /* asegurarse que esté por encima de las imágenes */
+    z-index: 10;
     margin-top: 5em;
-    margin-left: 13em;
-    color: white;           /* color del texto */
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* opcional para mejor legibilidad */
+    margin-left: 15em;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     letter-spacing: 0.05em;
+}
+
+.texto-fijo h2 {
+    font-size: 40px;
+    font-weight: 700;
 }
 
 @media (max-width: 576px){
     .texto-fijo {
         margin-left: 10em;
+    }
+    .texto-fijo h2 {
+        font-size: 24px;
     }
 }
 
