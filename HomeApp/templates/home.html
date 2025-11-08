@@ -48,15 +48,43 @@
         <div class="container mb-5">
             <div class="row justify-content-center mb-3">
                 <div class="col-4">
-                    <h4>Misión:</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nostra curabitur varius dis curae dignissim, urna malesuada facilisi vivamus sociis primis.</p>
-                    <h4>Objetivos:</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nostra curabitur varius dis curae dignissim, urna malesuada facilisi vivamus sociis primis.</p>
-                    <h4>Valores:</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nostra curabitur varius dis curae dignissim, urna malesuada facilisi vivamus sociis primis.</p>
+                    <div class="d-grid gap-3 d-md-block">
+                        <button type="button" class="btn btn-primary btn-lg active" data-target="txt1" data-slide="0">Mision</button>
+                        <button type="button" class="btn btn-primary btn-lg" data-target="txt2" data-slide="1">Objetivos</button>
+                        <button type="button" class="btn btn-primary btn-lg" data-target="txt3" data-slide="2">Valores</button>
+                    </div>
+                    <br><br>
+                    <div id="txt1">
+                        <h4>Misión:</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nostra curabitur varius dis curae dignissim, urna malesuada facilisi vivamus sociis primis.</p>
+                    </div>
+
+                    <div id="txt2" class="ocultar">
+                        <h4>Objetivos:</h4>
+                        <p>Volutpat, quisque, pellentesque, molestie, imperdiet, facilisi, augue, elit, condimentum, risus, non, mauris, maecenas, tellus, et, eleifend, massa, aliquam, eu, curabitur.</p>
+                    </div>
+
+                    <div id="txt3" class="ocultar">
+                        <h4>Valores:</h4>
+                        <p>Aenean, sapien, egestas, blandit, felis, et, vehicula, eleifend, porttitor, magna, nisl, neque, praesent, metus, aliquet, nullam, fames, interdum, auctor, molestie.</p>
+                    </div>
                 </div>
                 <div class="col-6">
-                    <img id="imgmision" src="{% static 'images/Carrusel1.jpg' %}" class="d-block w-100" alt="Carrusel1">
+                    <div id="alternarimagen" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'images/Carrusel1.jpg' %}" class="d-block w-100 imgmision" alt="Carrusel1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'images/Carrusel2.jpg' %}" class="d-block w-100 imgmision" alt="Carrusel1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'images/Carrusel3.jpg' %}" class="d-block w-100 imgmision" alt="Carrusel1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -71,8 +99,8 @@
                 <div class="col-6 col-md-6 col-lg-4" >
                     <div class="card">
                         <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
-                        <div class="card-body">
-                            <h5 class="card-title">Directora / Fundadora</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cargo 1</h5>
                             <p class="card-text">Nombre y Apellido</p>
                         </div>
                     </div>
@@ -80,44 +108,31 @@
                 <div class="col-6 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
-                        <div class="card-body">
-                            <h5 class="card-title">Vicedirector</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cargo 2</h5>
+                            <p class="card-text">Nombre y Apellido</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cargo 3</h5>
                             <p class="card-text">Nombre y Apellido</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row mb-3 justify-content-center">
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
-                        <div class="card-body">
-                            <h5 class="card-title">Secretario</h5>
-                            <p class="card-text">Nombre y Apellido</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
-                        <div class="card-body">
-                            <h5 class="card-title">Tesorero</h5>
-                            <p class="card-text">Nombre y Apellido</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <h2 class="TextoSede">Sede Centro Vecinal</h2>
+        <h2 class="TextoSede CentroVecinal">Sede Centro Vecinal</h2>
         <div class="container mb-5">
             <div class="row mb-4 justify-content-center">
                 <div class="col-6 col-md-6 col-lg-4" >
                     <div class="card">
                         <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
-                        <div class="card-body">
-                            <h5 class="card-title">Directora / Fundadora</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cargo 1</h5>
                             <p class="card-text">Nombre y Apellido</p>
                         </div>
                     </div>
@@ -125,20 +140,8 @@
                 <div class="col-6 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
-                        <div class="card-body">
-                            <h5 class="card-title">Vicedirector</h5>
-                            <p class="card-text">Nombre y Apellido</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-3 justify-content-center">
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
-                        <div class="card-body">
-                            <h5 class="card-title">Secretario</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cargo 2</h5>
                             <p class="card-text">Nombre y Apellido</p>
                         </div>
                     </div>
@@ -146,8 +149,8 @@
                 <div class="col-6 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="{% static 'images/profile.png' %}" class="card-img-top" alt="ImgDirectora">
-                        <div class="card-body">
-                            <h5 class="card-title">Tesorero</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cargo 3</h5>
                             <p class="card-text">Nombre y Apellido</p>
                         </div>
                     </div>
@@ -158,4 +161,27 @@
 {% endblock %}
 
 <!-- <script> -->
-{% block extra_js %}{% endblock %}
+{% block extra_js %}
+    <script>
+        const botones = document.querySelectorAll(".btn");
+        const secciones = document.querySelectorAll("div[id^='txt']");
+        const carrusel = new bootstrap.Carousel("#alternarimagen")
+
+        botones.forEach(boton => {
+            boton.addEventListener("click", () => {
+                secciones.forEach(sec => sec.classList.add("ocultar"));
+
+                botones.forEach(btn => btn.classList.remove("active"))
+
+                const target = boton.dataset.target;
+                document.getElementById(target).classList.remove("ocultar");
+
+                boton.classList.add("active")
+
+                const slideIndex = boton.getAttribute("data-slide");
+                carrusel.to(slideIndex);
+            });
+        });
+
+    </script>
+{% endblock %}
